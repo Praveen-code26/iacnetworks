@@ -4,7 +4,7 @@ terraform {
     bucket         = "terraformstate"
     key            = "IaaC/s3/terraform.tfstate"
     region         = "eu-west-2"
-    dynamodb_table = "365-eft-terraform-state-locks"
+    dynamodb_table = "terraform-state-locks"
     encrypt        = true
   }
 
