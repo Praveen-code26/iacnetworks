@@ -1,5 +1,5 @@
-#eu-west-2
-#"030574150512"
+#eu-east-2
+# Account - "************"
 variable "aws_region" {
   type        = string
   default     = "us-east-1"
