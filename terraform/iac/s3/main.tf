@@ -1,7 +1,7 @@
 terraform {
 
   backend "s3" {
-    bucket         = "365-eft-terraformstate"
+    bucket         = "terraformstate"
     key            = "IaaC/s3/terraform.tfstate"
     region         = "eu-west-2"
     dynamodb_table = "365-eft-terraform-state-locks"
