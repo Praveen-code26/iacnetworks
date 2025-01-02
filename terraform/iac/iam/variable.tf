@@ -15,45 +15,18 @@ variable "aws_account_id" {
   default     = ""
 }
 
-variable "eft_by_date" {
+variable "app" {
   type        = string
   default     = "by_date"
 }
 
-variable "eft_data_by_batch" {
-  type        = string
-  default     = "data_by_batch"
-}
 
-variable "eft_data_by_location" {
-  type        = string
-  default     = "data_by_location"
-}
 
-variable "eft_batch_detail" {
-  type        = string
-  default     = "batch_detail"
-}
-
-variable "eft_by_date_bucket_name" {
+variable "app_bucket_name" {
   type        = string
   default     = "by-date"
 }
 
-variable "eft_data_by_batch_bucket_name" {
-  type        = string
-  default     = "data-by-batch"
-}
-
-variable "eft_data_by_location_bucket_name" {
-  type        = string
-  default     = "data-by-location"
-}
-
-variable "eft_batch_detail_bucket_name" {
-  type        = string
-  default     = "batch-detail"
-}
 
 variable "ecs_task_execution_role_name" {
   type        = string
