@@ -2,7 +2,7 @@
 # Account - "************"
 variable "aws_region" {
   type        = string
-  default     = "us-east-1"
+  default     = "us-east-2"
 }
 
 variable "environment" {
@@ -17,14 +17,14 @@ variable "aws_account_id" {
 
 variable "app" {
   type        = string
-  default     = "by_date"
+  default     = ""
 }
 
 
 
 variable "app_bucket_name" {
   type        = string
-  default     = "by-date"
+  default     = ""
 }
 
 
@@ -38,7 +38,7 @@ variable "ecs_task_role_name" {
   default     = "ecsTaskRole"
 }
 
-variable "eft_lambda_role_name" {
+variable "app_lambda_role_name" {
   type        = string
   default     = "lambdaRole"
 }
