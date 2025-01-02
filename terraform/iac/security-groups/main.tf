@@ -4,7 +4,7 @@ terraform {
   backend "s3" {
     bucket         = "IaaC-terraformstate"
     key            = "IaaC/sg/terraform.tfstate"
-    region         = "eu-west-2"
+    region         = "eu-east-2"
     dynamodb_table = "IaaC-terraform-state-locks"
     encrypt        = true
   }
@@ -35,7 +35,7 @@ data "terraform_remote_state" "remote_state_vpc" {
   config = {
     bucket = "IaaC-terraformstate"
     key = "IaaC/vpc/terraform.tfstate"
-    region = "eu-west-2"
+    region = "eu-east-2"
   }
 }
 
