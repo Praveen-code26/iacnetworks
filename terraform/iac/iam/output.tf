@@ -7,5 +7,5 @@ output "ecs_task_role_arn" {
 }
 
 output "lambda_role_arn" {
-  value = aws_iam_role.eft_lambda_role.arn
+  value = aws_iam_role.app_lambda_role.arn
 }
